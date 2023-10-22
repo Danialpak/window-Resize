@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+header{
+    background-color: lightblue;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 30%;
+}
+.nav-link {
+    width: 75%;
+    display: flex;
+    justify-content: end;
+}
+.menu {
+    margin-right: 30px;
+}
+
+h1{
+    margin: 8px 0;
+    color: #000;
+}
+.menu ul, .socialsIcon ul{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+.menu li:first-child{
+    padding-left: 0;
+}
+.menu li, .socialsIcon li{
+    padding: 5px 10px;
+}
+.menu li a, .socialsIcon li a{
+    color: #000;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#menuBtn i{
+    font-size: 24px;
+    color: #000;
+}
+
+.hidden{
+    display: none;
+}
+.fa-times-circle {
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    z-index: 999999;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+@media (max-width: 850px){
+    .logo{
+        width: 70%;
+    }
+    .menu {
+        width: 100%;
+        margin-right: 0px;
+        text-align: center;
+    }
+    .socialsIcon {
+        width: 70%;
+    }
+    .menu ul{
+        display: block;
+    }
+    .socialsIcon ul {
+        justify-content: center;
+    }
+    .menu li{
+        padding: 10px 0px;
+    }
+    .mobile-menu-show{
+        background-color: #000000;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu li a, .socialsIcon li a{
+        color: #fff;
+        font-size: 18px;
+    }
+}
